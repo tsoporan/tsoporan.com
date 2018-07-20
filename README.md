@@ -1,3 +1,3 @@
 # tsoporan.com
 
-Hosted on AWS using CloudFront and S3
+Personal website hosted on AWS using CloudFront and S3
