@@ -1,13 +1,20 @@
 version: 2
 jobs:
-  build:
+  deploy:
     docker:
-      - image: debian:stretch
+      - image: circleci/python:2.7-jessie
     steps:
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
+          name: Install awscli
+          command: sudo pip install awscli
       - run:
-          name: Print the Current Time
-          command: date
+          name: Deploy to s3
+          command: |
+            aws s3 sync * s3://tsoporan.com --delete
+
+workflows:
+  version: 2
+  do-deploy:
+    jobs:
+      - deploy
