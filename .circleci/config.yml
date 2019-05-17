@@ -11,7 +11,7 @@ jobs:
       - run:
           name: Deploy to s3
           command: |
-            aws s3 cp index.html s3://tsoporan.com
+            aws s3 cp index.html *.asc s3://tsoporan.com
 
 workflows:
   version: 2
