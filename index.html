@@ -2,7 +2,7 @@
 <html>
   <head lang="en">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Titus Soporan | Software Developer</title>
+    <title>Titus Soporan</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta
@@ -13,25 +13,22 @@
     <meta name="author" content="Titus Soporan" />
     <meta
       name="description"
-      content="The online portfolio of Software Developer Titus Soporan"
+      content="Welcome to my little slice of the web 👋. I solve problems using software. I'm currently data engineering at Bungalow, a real-estate start-up."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css"
-    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css" />
 
     <style>
       body {
+        font-family: 'Roboto', sans-serif;
         background: linear-gradient(
             135deg,
             #eaeaea 22px,
@@ -63,14 +60,12 @@
         border-top: 20px solid #457b9d;
       }
       .container {
+        width: 90%;
+        padding: 10px;
+        margin: 30px auto;
         background: #fff;
-        border-left: 1px solid #ddd;
-        border-right: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-        border-radius: 2px;
-      }
-      h1 {
-        padding-top: 20px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
       }
       h1 span {
         color: #a8dadc;
@@ -85,33 +80,40 @@
       footer {
         text-align: center;
       }
+      .t {
+        color: #606c76;
+        vertical-align: middle;
+        font-size: 20px;
+      }
     </style>
+
+    <script type="text/javascript">
+      window.addEventListener('load', (e) => {
+        const dateEl = document.querySelector('.date');
+        const year = (new Date()).getFullYear();
+        dateEl.textContent = `${year}. 🤖`
+      });
+    </script>
   </head>
 
   <body>
     <div class="bar"></div>
 
     <div class="container">
-      <h1>Titus <span class="g">Soporan</span></h1>
-      <h2>Software Developer</h2>
+      <h1>Titus <span class="g">Soporan</span> <span class="t"></span></h1>
 
       <hr />
 
       <div id="content">
         <p>
-          Heya! I am a software developer from Canada and welcome to my little
-          slice of the web. I'm currently making computers compute at
-          <a href="https://bungalow.com">Bungalow</a> and
-          <a href="http://www.mobistreamsolutions.com/">MobiStream</a>.
+          Heya! Welcome to my little slice of the web 👋. I solve problems using software. I'm currently
+          data engineering at <a href="https://bungalow.com">Bungalow</a>, a real-estate start-up.
         </p>
 
         <p>
           My interests tend to orbit around: formal languages, software design
-          and architecture, startups, the web, data analytics, distributed
-          systems, security, and usability. I'm a huge fan of the
-          <a href="http://python.org">Python</a> programming language,
-          <a href="http://archlinux.org">ArchLinux</a> and
-          <a href="http://vim.org">Vim</a>.
+          and architecture, distributed systems, security, and data analysis. I'm also a huge fan of open source
+          software, some of my favorites include: Linux Kernel, Git, GPG, Python and Vim.
         </p>
 
         <p>
@@ -121,20 +123,12 @@
           >, fiddling on my guitar, and adventuring in the "outside world".
         </p>
 
-        <p>You can find me around on:</p>
+        <p>You can find me elsewhere:</p>
 
         <ul>
-          <li>
-            <a href="http://www.linkedin.com/profile/view?id=43963931"
-              >LinkedIn</a
-            >
-          </li>
+          <li><a href="http://www.linkedin.com/profile/view?id=43963931">LinkedIn</a></li>
           <li><a href="https://github.com/tsoporan">GitHub</a></li>
-          <li>
-            <a href="https://www.goodreads.com/user/show/6979374-titus-soporan"
-              >GoodReads</a
-            >
-          </li>
+          <li><a href="https://www.goodreads.com/user/show/6979374-titus-soporan">GoodReads</a></li>
           <li><a href="mailto:titus@tsoporan.com">Email</a></li>
         </ul>
       </div>
@@ -148,10 +142,10 @@
         </blockquote>
 
         <p>
-          <a href="/59D03D532467C916.asc">59D03D532467C916.asc</a>
+          PUB <a href="/59D03D532467C916.asc">59D03D532467C916.asc</a>
         </p>
 
-        <p>2018 🤖</p>
+        <p class="date"></p>
       </footer>
     </div>
 
