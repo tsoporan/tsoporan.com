@@ -17,18 +17,24 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css"
     />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css"
+    />
 
     <style>
       body {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         background: linear-gradient(
             135deg,
             #eaeaea 22px,
@@ -88,10 +94,10 @@
     </style>
 
     <script type="text/javascript">
-      window.addEventListener('load', (e) => {
-        const dateEl = document.querySelector('.date');
-        const year = (new Date()).getFullYear();
-        dateEl.textContent = `${year}. 🤖`
+      window.addEventListener("load", (e) => {
+        const dateEl = document.querySelector(".date");
+        const year = new Date().getFullYear();
+        dateEl.textContent = `${year}. 🤖`;
       });
     </script>
   </head>
@@ -106,14 +112,16 @@
 
       <div id="content">
         <p>
-          Heya! Welcome to my little slice of the web 👋. I solve problems using software. I'm currently
-          data engineering at <a href="https://bungalow.com">Bungalow</a>, a real-estate start-up.
+          Heya! Welcome to my little slice of the web 👋. I solve problems using
+          software. I'm currently data engineering at
+          <a href="https://bungalow.com">Bungalow</a>, a real-estate start-up.
         </p>
 
         <p>
           My interests tend to orbit around: formal languages, software design
-          and architecture, distributed systems, security, and data analysis. I'm also a huge fan of open source
-          software, some of my favorites include: Linux Kernel, Git, GPG, Python and Vim.
+          and architecture, distributed systems, security, and data analysis.
+          I'm also a huge fan of open source software, some of my favorites
+          include: Linux Kernel, Git, GPG, Python and Vim.
         </p>
 
         <p>
@@ -126,9 +134,17 @@
         <p>You can find me elsewhere:</p>
 
         <ul>
-          <li><a href="http://www.linkedin.com/profile/view?id=43963931">LinkedIn</a></li>
+          <li>
+            <a href="http://www.linkedin.com/profile/view?id=43963931"
+              >LinkedIn</a
+            >
+          </li>
           <li><a href="https://github.com/tsoporan">GitHub</a></li>
-          <li><a href="https://www.goodreads.com/user/show/6979374-titus-soporan">GoodReads</a></li>
+          <li>
+            <a href="https://www.goodreads.com/user/show/6979374-titus-soporan"
+              >GoodReads</a
+            >
+          </li>
           <li><a href="mailto:titus@tsoporan.com">Email</a></li>
         </ul>
       </div>
@@ -142,26 +158,11 @@
         </blockquote>
 
         <p>
-          PUB <a href="/59D03D532467C916.asc">59D03D532467C916.asc</a>
+          <a href="/pubkey.txt">GPG public key</a>
         </p>
 
         <p class="date"></p>
       </footer>
     </div>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-22315235-2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-22315235-2");
-    </script>
   </body>
 </html>
