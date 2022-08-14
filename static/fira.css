@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "FiraCode-Regular";
+  src: url("static/FiraCode-Regular.eot");
+  src: url("static/FiraCode-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-1F310;
+}

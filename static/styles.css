@@ -1,0 +1,180 @@
+@import url("fira.css");
+
+body {
+  font-family: "FiraCode-Regular", sans-serif;
+  background-color: #fff;
+  color: #222;
+  height: 100%;
+  width: 100%;
+  background: #111;
+  line-height: 1.4;
+  font-size: 20px;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #eee;
+  display: block;
+  height: 0;
+  margin: 1em 0;
+}
+
+#wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #ffffff 20%,
+      #ffffff 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #ffffff 20%,
+        #ffffff 80%,
+        transparent 80%,
+        transparent
+      )
+      17.5px 17.5px,
+    linear-gradient(
+        #272727 1.4000000000000001px,
+        transparent 1.4000000000000001px
+      )
+      0 -0.7000000000000001px,
+    linear-gradient(
+        90deg,
+        #272727 1.4000000000000001px,
+        #ffffff 1.4000000000000001px
+      ) -0.7000000000000001px 0;
+  background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
+}
+
+.avatar {
+  border-radius: 50%;
+  float: left;
+  height: 64px;
+}
+
+#container {
+  width: 70%;
+  min-height: calc(100vh - 60px);
+  padding: 20px;
+  margin: 20px 0 0 0;
+  background: #fff;
+  opacity: 1;
+  border-radius: 3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header div {
+  width: 100%;
+}
+
+header h1 {
+  padding-left: 70px;
+  margin-bottom: 0;
+  color: #444;
+  margin: 10px;
+  line-height: 1.2;
+}
+
+header h1 span {
+  color: #777;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+a {
+  color: #33b357;
+  text-decoration: underline;
+}
+
+nav {
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  padding: 5px 10px;
+  background: #33b357;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+main {
+  position: relative;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+footer .date {
+  font-size: 12px;
+  color: #eee;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+  #container {
+    width: 100%;
+    padding: 0;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 0;
+  }
+  header h1 {
+    font-size: 22px;
+    line-height: 1.8;
+  }
+  nav {
+    text-align: left;
+  }
+  nav ul {
+    padding: 0;
+    margin: 20px 0 10px;
+  }
+  nav ul li a {
+    padding: 5px;
+    font-size: 14px;
+  }
+  main {
+    padding: 10px;
+    min-height: 630px;
+  }
+  footer {
+    width: 100%;
+  }
+}
