@@ -10,7 +10,11 @@ function Home() {
         <p className="my-4">
           Heya 👋! Welcome to my little slice of the web. I solve problems using
           software. I'm currently at{" "}
-          <a className="text-green-600" href="https://goodwatercap.com">
+          <a
+            className="text-green-600"
+            title="Goodwater Capital"
+            href="https://goodwatercap.com"
+          >
             Goodwater Capital
           </a>
           , a VC firm focused on empowering entrepreneurs to change the world
@@ -18,16 +22,34 @@ function Home() {
         </p>
 
         <p className="my-4">
-          My interests tend to orbit around: formal languages, software
-          architecture, distributed systems, security, and data. I'm also a huge
-          fan of open source software, some of my favorites include:
-          (Arch)Linux, Git, GPG, Python and Vim.
+          My interests tend to orbit around: startups, software, distributed
+          systems, security, and data. I'm also a huge fan of open source
+          software, some of my favorites include: (Arch)Linux, Git, GPG (
+          <a className="text-green-600 text-xs" href="/pubkey.asc">
+            <code>0x59D03D532467C916</code>
+          </a>
+          ) , Python 🐍 and Vim.
         </p>
 
         <p className="my-4">
-          When I'm not at the computer I enjoy reading a good book, playing with
-          the pup, fiddling on my guitar, and adventuring in the "outside
-          world".
+          When I'm not at the computer I enjoy reading a good book, taking hikes
+          with my{" "}
+          <a
+            className="text-green-600"
+            title="Zoto, my mini golden doodle"
+            href=""
+          >
+            dog
+          </a>
+          , and strumming my{" "}
+          <a
+            title="Gibson Les Paul"
+            className="text-green-600"
+            href="https://en.wikipedia.org/wiki/Gibson_Les_Paul"
+          >
+            guitars
+          </a>
+          .
         </p>
       </div>
       <div className="text-xs">
@@ -40,7 +62,10 @@ function Home() {
           TailwindCSS
         </a>
         . The source code is available on{" "}
-        <a className="text-green-600" href="https://github.com/tso/tso.dev">
+        <a
+          className="text-green-600"
+          href="https://github.com/tsoporan/tsoporan.com"
+        >
           GitHub
         </a>
         .

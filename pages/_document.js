@@ -1,8 +1,11 @@
 import { Head, Html, Main, NextScript } from "next/document";
 
+const linearGradient = `
+linear-gradient(196deg, rgb(255, 255, 255) 0%, rgb(255 255 255) 4%, rgb(252, 252, 252) 15%, rgb(252, 252, 252) 5%, rgb(238 238 238) 26%, rgb(255 255 255) 54%, rgb(218 218 218) 78%, rgb(127 202 126) 113%, rgb(247, 247, 247) 95%, rgb(245, 245, 245) 100%)
+`;
+
 const styles = {
-  backgroundImage:
-    "linear-gradient(  200deg, hsl(0deg 0% 100%) 0%, hsl(344deg 0% 100%) 4%, hsl(344deg 0% 99%) 9%, hsl(344deg 0% 99%) 15%, hsl(344deg 0% 98%) 26%, hsl(344deg 0% 98%) 54%, hsl(344deg 0% 97%) 78%, hsl(344deg 0% 97%) 88%, hsl(344deg 0% 97%) 95%, hsl(0deg 0% 96%) 100%)",
+  backgroundImage: linearGradient,
 };
 
 export default function Document() {

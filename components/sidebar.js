@@ -26,8 +26,8 @@ function Sidebar() {
         <ul>
           {links.map((link) => (
             <li className="my-2" key={link.href}>
-              <Link href={link.href} key={link.label}>
-                <button className="bg-white py-2 px-2 rounded-md bg-slate-200 text-slate-500 hover:bg-slate-500 hover:text-white">
+              <Link href={link.href} key={link.label} title={link.label}>
+                <button className="py-2 px-2 rounded-md bg-gray-600 text-gray-100 hover:bg-gray-800 hover:text-white">
                   {link.label}
                 </button>
               </Link>
