@@ -4,11 +4,10 @@ function Sidebar() {
   const links = [
     { href: "/", label: "Home" },
     { href: "/log", label: "Log" },
-    { href: "/projects", label: "Projects" },
   ];
 
   return (
-    <div className="sidebar text-slate-700">
+    <div className="sidebar text-slate-700 h-60">
       <div className="flex gap-2 items-center">
         <img
           className="avatar rounded-full w-12"

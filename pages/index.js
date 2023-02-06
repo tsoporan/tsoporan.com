@@ -22,8 +22,8 @@ function Home() {
         </p>
 
         <p className="my-4">
-          My interests tend to orbit around: startups, software, distributed
-          systems, security, and data. I'm also a huge fan of open source
+          My interests tend to orbit around: startups, distributed systems,
+          programming, security, and data. I'm also a huge fan of open source
           software, some of my favorites include: (Arch)Linux, Git, GPG (
           <a className="text-green-600 text-xs" href="/pubkey.asc">
             <code>0x59D03D532467C916</code>
