@@ -32,8 +32,14 @@ function Home() {
         </p>
 
         <p className="my-4">
-          When I'm not at the computer I enjoy reading a good book, taking hikes
-          with my{" "}
+          When I'm not at the computer I enjoy{" "}
+          <a
+            href="https://www.goodreads.com/user/show/6979374-titus-soporan"
+            title="Goodreads"
+          >
+            reading a good book
+          </a>
+          , taking hikes with my{" "}
           <a
             className="text-green-600"
             title="Zoto, my mini golden doodle"
