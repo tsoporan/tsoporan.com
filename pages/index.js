@@ -34,6 +34,7 @@ function Home() {
         <p className="my-4">
           When I'm not at the computer I enjoy{" "}
           <a
+            className="text-green-600"
             href="https://www.goodreads.com/user/show/6979374-titus-soporan"
             title="Goodreads"
           >
